@@ -55,7 +55,6 @@ def part_1(loc: str = DEFAULT_INPUT) -> int:
                 new_floors = tuple(new_floors)
                 new_state = State(new_floors, new_elevator)
                 if winning_floors(new_floors):
-                    #print_history(history + [new_state])
                     return moves + 1
                 if valid_floors(new_floors) and new_state not in seen:
                     seen.add(new_state)
@@ -121,7 +120,6 @@ def part_2(loc: str = DEFAULT_INPUT) -> int:
                 new_floors = tuple(new_floors)
                 new_state = State(new_floors, new_elevator)
                 if winning_floors(new_floors):
-                    #print_history(history + [new_state])
                     return moves + 1
                 if valid_floors(new_floors) and new_state not in seen:
                     seen.add(new_state)
